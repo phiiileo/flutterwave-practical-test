@@ -5,7 +5,7 @@ let bvn = document.querySelector("#bvn").value;
 
 console.log(fname, lname,p_num,bvn);
 
-    let tokenKey = 'FLWSECK-af1ff421c70907112ba55815f89710ea-X.'
+    let tokenKey = 'FLWSECK-af1ff421c70907112ba55815f89710ea-X'
     let request = new XMLHttpRequest();
     let api = "https://ravesandboxapi.flutterwave.com/v2/kyc/bvn/" + bvn + "?seckey=" + tokenKey;
     request.open("GET", api, true);
@@ -13,7 +13,7 @@ console.log(fname, lname,p_num,bvn);
         var data = JSON.parse(this.response);
         if (request.status >= 200 && request.status < 400) {
             let matchAll = fname == data.data.first_name && lname == data.data.last_name && p_num == data.data.phone_number;
-            
+
             if (matchAll != true) {
                 result.innerHTML = "<h3 class='head'>RESULT </h3>"
                 result.innerHTML += "<p>Details Not Found</p>"
