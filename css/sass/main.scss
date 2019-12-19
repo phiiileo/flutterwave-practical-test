@@ -1,0 +1,138 @@
+@import "./config";
+
+body {
+  background-color: $bgc;
+  background-attachment: fixed;
+  background-image: url("../img/financial background.jpg");
+  background-size: cover;
+  .container {
+    padding: 30px 0;
+    .lead {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+
+      h3 {
+        padding: 30px 0;
+        font-size: 20px;
+      }
+    }
+    .form_container {
+      margin: 0 auto;
+      min-width: 300px;
+      max-width: 600px;
+      min-height: 100vh;
+      padding: 20px 50px;
+      form {
+        background-color: rgba(0, 0, 0, 0.178);
+        border: 1px solid $brdc;
+        padding: 20px 50px;
+        height: 80%;
+        width: 100%;
+        .form-head {
+          text-align: left;
+          padding: 20px 0;
+          h3 {
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 13px;
+            span {
+              color: red;
+            }
+          }
+        }
+        .form-group {
+          font-size: 20px;
+          margin-bottom: 25px;
+          label {
+            padding: 10px 0;
+            font-size: 17px;
+          }
+          label::after {
+            content: "*";
+            color: red;
+            margin-left: 10px;
+          }
+          span {
+            font-size: 12px;
+            color: red;
+          }
+          li.input-control {
+            list-style: none;
+            width: 100%;
+            cursor: pointer;
+
+            input {
+              width: 87%;
+              border-radius: 5px 0 0 5px;
+              padding: 10px;
+              border: none;
+              margin-top: 8px;
+              height: 40px;
+            }
+            i {
+              height: 40px;
+              width: 45px;
+              text-align: center;
+              background-color: $ttc;
+              padding: 7px;
+              border-radius: 0 5px 5px 0;
+              border-left: 1px solid black;
+            }
+            input:focus {
+              background-color: rgba(0, 128, 0, 0.562);
+              color: white;
+              outline: green;
+            }
+          }
+          .input-control:hover{
+            i{
+              opacity: .7;
+            }
+          }
+
+          .submit,
+          .reset {
+            border: 2px solid green;
+            padding: 10px;
+            border-radius: 5px;
+            width: 48%;
+            display: inline-block;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+          }
+          .reset {
+            background-color: red;
+            border: 2px solid red;
+          }
+          .submit:hover, .reset:hover{
+            background-color: transparent;
+            color: green;
+          }
+          .reset:hover{
+            color: red;
+          }
+          p {
+            margin-top: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            a {
+              background-color: white;
+              padding: 10px 15px;
+              border-radius: 5px;
+            }
+            a:hover{
+              color: green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

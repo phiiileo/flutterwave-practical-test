@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: #aaddff;
+  background-attachment: fixed;
+  background-image: url("../img/financial background.jpg");
+  background-size: cover;
+}
+
+body .container {
+  padding: 30px 0;
+}
+
+body .container .lead {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+body .container .lead h3 {
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+body .container .form_container {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 100vh;
+  padding: 20px 50px;
+}
+
+body .container .form_container form {
+  background-color: rgba(0, 0, 0, 0.178);
+  border: 1px solid darkorange;
+  padding: 20px 50px;
+  height: 80%;
+  width: 100%;
+}
+
+body .container .form_container form .form-head {
+  text-align: left;
+  padding: 20px 0;
+}
+
+body .container .form_container form .form-head h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+body .container .form_container form .form-head p {
+  font-size: 13px;
+}
+
+body .container .form_container form .form-head p span {
+  color: red;
+}
+
+body .container .form_container form .form-group {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+body .container .form_container form .form-group label {
+  padding: 10px 0;
+  font-size: 17px;
+}
+
+body .container .form_container form .form-group label::after {
+  content: "*";
+  color: red;
+  margin-left: 10px;
+}
+
+body .container .form_container form .form-group span {
+  font-size: 12px;
+  color: red;
+}
+
+body .container .form_container form .form-group li.input-control {
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+body .container .form_container form .form-group li.input-control input {
+  width: 87%;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  border: none;
+  margin-top: 8px;
+  height: 40px;
+}
+
+body .container .form_container form .form-group li.input-control i {
+  height: 40px;
+  width: 45px;
+  text-align: center;
+  background-color: #edf;
+  padding: 7px;
+  border-radius: 0 5px 5px 0;
+  border-left: 1px solid black;
+}
+
+body .container .form_container form .form-group li.input-control input:focus {
+  background-color: rgba(0, 128, 0, 0.562);
+  color: white;
+  outline: green;
+}
+
+body .container .form_container form .form-group .input-control:hover i {
+  opacity: .7;
+}
+
+body .container .form_container form .form-group .submit,
+body .container .form_container form .form-group .reset {
+  border: 2px solid green;
+  padding: 10px;
+  border-radius: 5px;
+  width: 48%;
+  display: inline-block;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+body .container .form_container form .form-group .reset {
+  background-color: red;
+  border: 2px solid red;
+}
+
+body .container .form_container form .form-group .submit:hover, body .container .form_container form .form-group .reset:hover {
+  background-color: transparent;
+  color: green;
+}
+
+body .container .form_container form .form-group .reset:hover {
+  color: red;
+}
+
+body .container .form_container form .form-group p {
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body .container .form_container form .form-group p a {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+body .container .form_container form .form-group p a:hover {
+  color: green;
+}
+/*# sourceMappingURL=main.css.map */
