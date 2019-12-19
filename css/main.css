@@ -20,6 +20,8 @@ body {
   background-image: url("../img/financial background.jpg");
   background-size: cover;
   overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 body .container {
@@ -220,7 +222,7 @@ body .container #result p #status {
 
 body .container #result p #red {
   color: red;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 body .container div#control {
