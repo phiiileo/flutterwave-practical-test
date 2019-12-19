@@ -120,9 +120,9 @@ body .container #form_container form .form-group li.input-control i {
 }
 
 body .container #form_container form .form-group li.input-control input:focus {
-  background-color: rgba(0, 128, 0, 0.562);
+  background-color: #97df97;
   color: white;
-  outline: green;
+  outline: red;
 }
 
 body .container #form_container form .form-group .input-control:hover i {
@@ -176,12 +176,27 @@ body .container #form_container form .form-group p a:hover {
 
 body .container #result {
   border: 1px solid darkorange;
-  margin: 400px auto;
+  margin: 50px auto;
   -webkit-transition: all 1s;
   transition: all 1s;
   max-width: 700px;
   min-height: 300px;
   background-color: white;
+}
+
+body .container #result h4 {
+  color: red;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+body .container #result h5 {
+  text-align: center;
+  font-size: 25px;
+}
+
+body .container #result h5 i {
+  margin-left: 20px;
 }
 
 body .container #result .head {
