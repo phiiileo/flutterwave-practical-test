@@ -15,6 +15,7 @@
         <section class="container">
             <div class="lead">
                 <h3>Welcome, Verify your BVN with flutterwave today!</h3>
+                <a href="<?php $_SERVER["PHP_SELF"]?>">Home</a>
             </div>
             <div id="form_container">
                 <form action="./result.php" id="form1" method="POST" >
@@ -56,14 +57,10 @@
                         <div class="form-group">
                             <input  type="submit" value="Verify" id="submit" class="submit" />
                             <input type="reset" value="Reset" class="reset" />
-                            <p>Would like to use Flutterwave Products? <a href="#"> Click here</a></p>
+                            <p>Would like to use Flutterwave Products? <a href="https://flutterwave.com/ng/online-payments-products/rave/" target="_blank"> Click here</a></p>
                         </div>
                     </div>
                 </form>
-            </div>
-            <div id="control"><i class="fa fa-times-circle" id="close"></i></div>
-            <div id="result">
-
             </div>
         </section>
     </main>

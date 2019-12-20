@@ -26,6 +26,7 @@
         <section class="container">
             <div class="lead">
                 <h3>YOUR VERIFICATION RESULT</h3>
+                <a href="index.php">Home</a>
             </div>
             <!-- <div id="form_container">
                 <form action="./result.html" id="form1" >
@@ -72,7 +73,10 @@
             </div> -->
             <div id="control"><i class="fa fa-times-circle" id="close"></i></div>
             <div id="result">
-           
+            <div class="loading">
+                <div class="card"></div>
+                Loading...
+            </div>
             </div>
         </section>
     </main>

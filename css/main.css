@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -15,11 +16,85 @@ a:hover {
 }
 
 body {
+  min-width: 370px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  15% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  30% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  45% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  60% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  90% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  15% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  30% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  45% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  60% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  90% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body {
   background-color: #aaddff;
   background-attachment: fixed;
   background-image: url("../img/financial background.jpg");
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -116,7 +191,7 @@ body .container #form_container form .form-group li.input-control i {
   width: 45px;
   text-align: center;
   background-color: #edf;
-  padding: 7px;
+  padding: 8px;
   border-radius: 0 5px 5px 0;
   border-left: 1px solid black;
 }
@@ -186,6 +261,34 @@ body .container #result {
   background-color: white;
 }
 
+body .container #result .loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+body .container #result .loading .card {
+  width: 30px;
+  height: 30px;
+  border: 2px solid darkorange;
+  margin-right: 30px;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 body .container #result h4 {
   color: red;
   padding: 50px 30px;
@@ -222,6 +325,7 @@ body .container #result p #status {
 
 body .container #result p #red {
   color: red;
+  margin-left: 10px;
   font-size: 20px;
 }
 
@@ -242,5 +346,17 @@ body .container div#control i {
 
 body .container div#control i:hover {
   color: blue;
+}
+
+@media screen and (max-width: 560px) {
+  #form_container {
+    padding: 20px 0px !important;
+  }
+  #form_container form {
+    padding: 20px 20px !important;
+  }
+  #form_container form input {
+    width: 80% !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
