@@ -1,14 +1,14 @@
 @import "config";
 
 body {
-  background-color: $ttc;
+  background-color: whitesmoke;
 
   main {
-   @import "./header";
+    @import "./header"; 
     .content {
       min-width: 300px;
       max-width: 500px;
-      margin: 200px auto;
+      margin: 50px auto;
       padding: 30px 0;
       text-align: center;
       border: 1px solid $brdc;
@@ -20,17 +20,85 @@ body {
         }
       }
       &_payNow {
-        margin-top: 100px;
+        margin-top: 20px;
+        #form1 {
+          display: block;
+          .form-group {
+            width: 100%;
+            padding: 10px;
+            label {
+              display: block;
+              min-width: 100px;
+              max-width: 200px;
+              margin: 0 auto;
+              padding: 10px 0px;
+              cursor: pointer;
+              font-weight: bold;
+            }
+            input,
+            input:disabled {
+              width: 30%;
+              text-align: center;
+              margin-top: 10px;
+              padding: 5px 20px;
+              font-size: 18px;
+              border: none;
+              background-color: transparent;
+              border-bottom: 1px solid darkcyan;
+            }
+            input:disabled {
+              cursor: not-allowed;
+            }
+            input:focus {
+              background-color: darkslategrey;
+              color: white;
+              outline: lightgreen;
+              width: 70%;
+              transition: width 1s ease-in-out;
+            }
+          }
+        }
         button {
           border: none;
           background-color: darkcyan;
           color: white;
-          width: 200px;
+          width: 150px;
           height: 50px;
+          border-radius: 5px;
           font-size: 20px;
+          margin: 30px 50px;
           cursor: pointer;
+        }
+        #myTable {
+          display: block;
+          border-collapse: collapse;
+          margin: 30px auto;
+
+          th,
+          td {
+            border: 1px solid darkslategrey;
+            padding: 10px 0;
+          }
+          th {
+            background-color: darkslategrey;
+            color: white;
+            border-right: 1px solid white;
+          }
+          th:first-child {
+            width: 50px;
+          }
+          th:nth-child(2),
+          th:nth-child(3) {
+            width: 250px;
+          }
+          td:nth-child(2),
+          td:last-child {
+            text-align: left;
+            padding-left: 10px;
+          }
         }
       }
     }
   }
-}
+} 
+

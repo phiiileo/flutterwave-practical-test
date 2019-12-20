@@ -1,5 +1,5 @@
 @import "./config";
-@keyframes rotate {
+@keyframes rotate { 
   0% {
     transform: rotate(45deg);
   }
@@ -7,7 +7,7 @@
     transform: rotate(90deg);
   }
   30% {
-    transform: rotate(135deg);
+    transform: rotate(135deg); 
   }
   45% {
     transform: rotate(180deg);
