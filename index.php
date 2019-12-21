@@ -12,7 +12,18 @@
 
 <body>
     <main>
-        <section class="container">
+    <header>
+            <nav class="menu">
+                <ul class="menu_items">
+                    <li class="menu_items_link"><a href="#">Home</a></li>
+                    <li class="menu_items_link"><a href="income_share.php">Share Income</a></li>
+                    <li class="menu_items_link"><a href="#"><i class="fa fa-user-circle"></i></a></li>
+                </ul>
+            </nav>
+            <aside class="brand"><a href="">
+                <i class="far fa-check-circle"></i>BVNValidate</a></aside>
+        </header>
+                <section class="container">
             <div class="lead">
                 <h3>Welcome, Verify your BVN with flutterwave today!</h3>
                 <a href="<?php $_SERVER["PHP_SELF"]?>">Home</a>

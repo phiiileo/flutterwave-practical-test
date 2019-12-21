@@ -15,9 +15,8 @@
         <header>
             <nav class="menu">
                 <ul class="menu_items">
-                    <li class="menu_items_link"><a href="#">Home</a></li>
-                    <li class="menu_items_link"><a href="#">About</a></li>
-                    <li class="menu_items_link"><a href="#">Contact</a></li>
+                    <li class="menu_items_link"><a href="index.php">Home</a></li>
+                    <li class="menu_items_link"><a href="index.php">BVN Validator</a></li>
                     <li class="menu_items_link"><a href="#"><i class="fa fa-user-circle"></i></a></li>
                 </ul>
             </nav>

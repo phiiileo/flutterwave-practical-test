@@ -61,6 +61,12 @@ body main header .menu_items_link a {
   color: white;
 }
 
+@media screen and (max-width: 560px) {
+  body main .menu_items li:first-child, body main .menu_items li:last-child {
+    display: none;
+  }
+}
+
 body main .content {
   min-width: 300px;
   max-width: 500px;
