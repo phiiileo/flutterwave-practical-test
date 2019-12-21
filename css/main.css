@@ -211,7 +211,7 @@ body .container #form_container form .form-group label::after {
 }
 
 body .container #form_container form .form-group span {
-  font-size: 12px;
+  font-size: 20px;
   color: red;
 }
 
