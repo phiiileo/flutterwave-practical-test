@@ -5,7 +5,7 @@ let bvn = document.querySelector("#bvn").value;
 
 console.log(fname, lname, p_num, bvn);
 
-let tokenKey = 'FLWSECK-af1ff421c70907112ba55815f89710ea-X.'
+let tokenKey = 'FLWSECK-af1ff421c70907112ba55815f89710ea-X'
 let request = new XMLHttpRequest();
 let api = "https://ravesandboxapi.flutterwave.com/v2/kyc/bvn/" + bvn + "?seckey=" + tokenKey;
 request.open("GET", api, true);
