@@ -39,16 +39,17 @@ function payWithRave() {
                 response.tx.chargeResponseCode == "0"
             ) {
             output_head.innerHTML = "Payment was successfull"
-
+                let customer_share = (ride_amnt * 80 / 100).toFixed(2);
+                let company_share = (ride_amnt * 20 / 100).toFixed(2);
                 let table = (
                     "<table id='myTable'><tr><th>S/N</th><th>Key</th><th>Value</th></tr>" +
-                    "<tr><td>1</td><td>Rider's ID</td><td>" + rider_id + "</td></tr>" +
-                    "<tr><td>2</td><td>Rider's Name</td><td>" + rider + "</td></tr>" +
+                    "<tr><td>1</td><td>Driver's ID</td><td>" + rider_id + "</td></tr>" +
+                    "<tr><td>2</td><td>Driver's Name</td><td>" + rider + "</td></tr>" +
                     "<tr><td>3</td><td>Customer's Name</td><td>" + customer_name + "</td>" +
                     "<tr><td>4</td><td>Customer's Email</td><td>" + customer_mail + "</td></tr>" +
-                    "<tr><td>5</td><td>Ride Price</td><td>" + ride_amnt + "</td >" +
-                    "<tr><td>6</td><td>Rider's Share</td><td>" + (ride_amnt * 60 / 100) + "</td >" +
-                    "<tr><td>7</td><td>Company's Share</td><td>" + (ride_amnt * 40 / 100) + "</td >" +
+                    "<tr><td>5</td><td>Ride Price (&#8358;)</td><td>" + ride_amnt + "</td >" +
+                    "<tr><td>6</td><td>Driver's Share (&#8358;)80%</td><td>" + customer_share + "</td >" +
+                    "<tr><td>7</td><td>Company's Share (&#8358;)20%</td><td>" + company_share + "</td >" +
                     "</table>")
                 output.innerHTML = table;
             } else {
