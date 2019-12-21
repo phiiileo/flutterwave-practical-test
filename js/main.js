@@ -5,7 +5,7 @@ let bvn = document.querySelector("#bvn").value;
 
 console.log(fname, lname, p_num, bvn);
 
-let tokenKey = 'FLWSECK-af1ff421c70907112ba55815f89710ea-X'
+let tokenKey = 'FLWSECK-af1ff421c70907112ba55815f89710ea-X.'
 let request = new XMLHttpRequest();
 let api = "https://ravesandboxapi.flutterwave.com/v2/kyc/bvn/" + bvn + "?seckey=" + tokenKey;
 request.open("GET", api, true);
@@ -59,7 +59,8 @@ request.onload = function () {
 
     }
     else {
-        result.innerHTML = " <h4><span id='e500'>ERROR 500</span> <br> Something went wrong with the Server</h4>"
+        result.innerHTML = " <h4><span id='e500'>ERROR 500</span> <br>Please make sure you enter a valid BVN</h4>";
+        result.innerHTML +="<h4>OR<br> This might be a server error. Try again later!</h4>"
         result.innerHTML += "<h5>Return<a href='index.php'><i class='fa fa-arrow-left'></i></a></h5>"
     }
 }
