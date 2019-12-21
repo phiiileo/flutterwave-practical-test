@@ -3,7 +3,7 @@ let errorContainer = document.querySelectorAll(".error_message");
 
 inputValue.forEach((input, index) => {
     inputValue[index].addEventListener("input", isValid)
-    function isValid(event) {
+    function isValid() {
 
         const myregex = /[^a-z0-9]/ig;
         const myregex2 = /[a-z]/ig;
@@ -11,15 +11,35 @@ inputValue.forEach((input, index) => {
         const result2 = myregex2.test(input.value);
         let errorMessage;
         if (result) {
-            errorMessage = "<span style='color: red'>Enter a valid value</span>"
+            errorMessage = "Enter a valid value"
         }
         else {
-            ((inputValue[index] == inputValue[2] || inputValue[index] == inputValue[3]) && result2) ?
-                errorMessage = "<span style='color: red'>Enter a valid value</span>" :
-                errorMessage = "<span style='color: green'>Valid</span>"
-
+            if ((inputValue[index] == inputValue[2] || inputValue[index] == inputValue[3]) && result2) {
+                errorMessage = "Enter a valid value"
+            }
+            else {
+                errorMessage = "Valid";
+                errorContainer[index].style.color = "green";
+            }
 
         }
         errorContainer[index].innerHTML = errorMessage
     }
+})
+
+let submitbtn = document.querySelector("#submit");
+document.querySelector("#submit").addEventListener("click", function (event) {
+    let status = []
+    for (let i = 0; i < errorContainer.length; i++) {
+        status.push(errorContainer[i].innerHTML);
+    }
+    let final_status = status.indexOf("Enter a valid value");
+    if (final_status > 0) {
+        event.preventDefault();
+        alert("Please fill all forms accordingly!")
+    }
+    else {
+        true;
+    }
+
 })
