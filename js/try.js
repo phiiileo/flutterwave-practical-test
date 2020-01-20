@@ -14,12 +14,13 @@ document.querySelector("#amount").value = ride_amnt;
 function payWithRave() {
     customer_name = document.querySelector("#C_name").value;
     customer_mail = document.querySelector("#email").value;
+        let test1 = Math.floor(Math.random() * 100000 + 1)
     var x = getpaidSetup({
         PBFPubKey: API_publicKey,
         customer_email: customer_mail,
         amount: ride_amnt,
         currency: "NGN",
-        txref: "rave-123456",
+        txref: "rave-"+test1,
         subaccounts: [
             {
                 id: "RS_671829CA29B44D1C15A46590E904516D",
